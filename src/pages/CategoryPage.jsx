@@ -6,14 +6,14 @@ import Products from '../components/Products';
 import Annoucne from '../components/Announce';
 
 const CategoryPage = () => {
-  return <div>  
+  return <div>
       <Annoucne/>
       <Navbar/>
       <div className='flex flex-col p-5'>
           <h1 className='text-[30px]'>Men's Clothes</h1>
           <div className='flex items-center justify-between mt-3'>
               <div className='flex mobile:flex-col'>
-                  <p>Filter by</p> 
+                  <p>Filter by</p>
                   <select className='ml-3 border-2 border-silver mobile:ml-0'>
                       <option selected disabled>Size</option>
                       <option>Small</option>
@@ -47,3 +47,6 @@ const CategoryPage = () => {
 };
 
 export default CategoryPage;
+
+
+

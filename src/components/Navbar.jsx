@@ -1,6 +1,7 @@
 import { Badge} from "@material-ui/core";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -27,18 +28,22 @@ const Navbar = () => {
 
 
           {/* Logo */}
-          <div className="center flex-1 text-center  mobile:ml-6">
-              <div className = "logo font-bold mobile:text-sm">Winter Kings</div>
+        <div className="center flex-1 text-center  mobile:ml-6">
+          <Link to="/">
+            <div className="logo font-bold mobile:text-sm">StyleHub</div>
+            </Link>
           </div>
 
           {/* Right Side */}
           <div className="right flex flex-1 items-center justify-end mobile:justify-center mobile:flex-[2]">
-              <div className={style}>Register</div>
-              <div className={style}>Sign In</div>
-              <div className={style}>
-                <Badge badgeContent={2} color='primary'>
+              <Link to="/register"><div className={style}>Register</div></Link>
+             <Link to="/login"> <div className={style}>Sign In</div></Link>
+          <div className={style}>
+            <Link to="/cart">
+                <Badge badgeContent={3} color='primary'>
                   <ShoppingCartOutlined/>
-                </Badge>
+              </Badge>
+              </Link>
               </div>
           </div>
 

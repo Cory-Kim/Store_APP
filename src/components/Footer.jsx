@@ -34,12 +34,16 @@ const Footer = () => {
             <p className='pl-3'>Canada, Surrey</p>
         </div>
         <div className="flex m-3">
-            <LocalPhoneOutlined className="text-[#521da8]"/>
+          <LocalPhoneOutlined className="text-[#521da8]" />
+          <a href="tel:+91 8264954234">
             <p className='pl-3'>+1 7788711130</p>
+            </a>
         </div>
         <div className="flex m-3">
-            <EmailOutlined className="text-[#8a4af3]"/>
+          <EmailOutlined className="text-[#8a4af3]" />
+          <a href="mailto:lazylazylazywolf@gmail.com">
             <p className='pl-3'>cdokyung@gmail.com</p>
+            </a>
         </div>
       </div>
     </div>

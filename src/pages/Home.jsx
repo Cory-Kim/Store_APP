@@ -7,7 +7,6 @@ import Products from '../components/Products'
 import NewsLetter from '../components/Newsletter'
 import Footer from '../components/Footer'
 
-
 function Home() {
   return (
     <div>
